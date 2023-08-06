@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Kanetin";
+    src: url("../../fonts/Kanetin.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Kizilkaya";
+    src: url("../../fonts/Kizilkaya.ttf") format("TrueType");
+}
+
+.containerFooter {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 12vh;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #4F4F4F;
+    transition: all 0.3s ease;
+    font-size: calc(1px + 1vw);
+}
+
+.footer a.active, .footer a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footerleft span {
+    font-family: 'Kizilkaya';
+    font-size: calc(8px + 1vw);
+}
+
+.footerleft {
+    font-size: calc(1px + 1vw);
+}
+
+.footerright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1vw;
+}
