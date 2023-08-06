@@ -1,0 +1,495 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Kanetin";
+    src: url("../../fonts/Kanetin.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Kizilkaya";
+    src: url("../../fonts/Kizilkaya.ttf") format("TrueType");
+}
+
+body {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    background: black;
+    font-family: "Kanetin", Arial;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+body.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.containerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: 170px;
+    height: 16vh;
+    -webkit-user-select: none;
+    user-select: none;   
+}
+
+.containerHeader .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1554px;
+    width: 100%;
+    height: 100%;
+    margin: 0 3vw;
+}
+
+.header .leftButton {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.leftButton .homePageBorder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0.15vw solid #FEFEF9;
+    max-width: 336px;
+    max-height: 54px;
+}
+
+.leftButton .homePageFill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #FEFEF9;
+    background: #FFF;
+    max-width: 325px;
+    max-height: 43.61px;
+    padding-left: 0.5vw;
+    padding-right: 0.1vw;
+    margin: 2%;
+    width: 13vw;
+    height: 3.5vh;
+}
+
+.homePageFill p {
+    font-size: calc(1px + 0.7vw);
+    font-family: "Kanetin", Arial;
+}
+
+.homePageFill img {
+    max-width: 35px;
+    max-height: 35px;
+    width: auto;
+    height: 3vh;
+    cursor: pointer;
+}
+
+.AllContentButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 28.3vw;
+    max-width: 747px;
+    max-height: 54px;
+    border: 0.15vw solid #FEFEF9;
+    border-radius: 50px;
+    background: rgba(39, 39, 39, 0.70);
+}
+
+.leftButton .contentButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.leftButton .contentButtonFill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 738.314px;
+    max-height: 43.61px;
+    margin: 2% 1%;
+    height: 2.85vh;
+    gap: 3px;
+    width: 100%;
+}
+
+.contentButton .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 0.15vw solid #FEFEF9;
+    width: 50%;
+    height: 4vh;
+    max-height: 43.61px;
+    font-size: calc(1px + 0.7vw);
+    font-family: "Kanetin", Arial;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 0.5vw;
+    opacity: 1;
+    animation: fadeInAnim 0.5s ease;
+}
+
+.about .aboutSub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 0.15vw solid #E07D63;
+    background: #E07D63;
+    height: 4vh;
+    width: 5vw;
+}
+
+.contentButton .projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 0.15vw solid #FEFEF9;
+    max-width: 747px;
+    width: 50%;
+    height: 4vh;
+    max-height: 43.61px;
+    font-size: calc(1px + 0.7vw);
+    font-family: "Kanetin", Arial;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 0.5vw;
+    opacity: 1;
+    animation: fadeInAnim 0.5s ease;
+}
+
+.projects .projectsSub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 0.15vw solid #257CAC;
+    background: #257CAC;
+    height: 4vh;
+    width: 6vw;
+}
+
+.AllContentButton .littleButton {
+    color: white;
+    display: none;
+    width: 100%;
+    height: 4vh;
+    max-height: 43.61px;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    animation: fadeInAnim 0.5s ease;
+    cursor: pointer;
+}
+
+.littleButton p {
+    display: flex;
+    border-radius: 100px;
+    border: 0.15vw solid #FEFEF9;
+    padding: 0.3vw 0.942vw;
+    font-size: calc(1px + 0.7vw);
+    font-family: "Kanetin", Arial;
+    width: 100%;
+    height: 3vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuButton {
+    border: 0.15vw solid #FEFEF9;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    max-height: 54px;
+    max-width: 54px;
+    cursor: pointer;
+}
+
+.menuButton img {
+    max-width: 34px;
+    max-height: 34px;
+    height: 3vh;
+    width: 3vh;
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+}
+
+.menuButton.active img {
+    max-width: 34px;
+    max-height: 34px;
+    height: 3vh;
+    width: 3vh;
+    transform: rotate(135deg);
+    transition: all 0.5s ease;
+}
+
+@keyframes fadeInAnim {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutAnim {
+    from {
+        opacity: 1;
+    } 
+    to {
+        opacity: 0;
+    }
+}
+
+.AllContentButton .littleButton.active {
+    color: white;
+    display: none;
+    width: 100%;
+    height: 4vh;
+    max-height: 43.61px;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    animation: fadeOutAnim 0.5s ease;
+}
+
+.contentButton .projects.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 0.15vw solid #FEFEF9;
+    max-width: 747px;
+    width: 50%;
+    height: 4vh;
+    max-height: 43.61px;
+    font-size: calc(1px + 0.7vw);
+    font-family: "Kanetin", Arial;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 0.5vw;
+    opacity: 0;
+    animation: fadeOutAnim 0.5s ease;
+}
+
+.contentButton .about.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 0.15vw solid #FEFEF9;
+    width: 50%;
+    height: 4vh;
+    max-height: 43.61px;
+    font-size: calc(1px + 0.7vw);
+    font-family: "Kanetin", Arial;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 0.5vw;
+    opacity: 1;
+    animation: fadeOutAnim 0.5s ease;
+}
+
+.rightButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 256px;
+    max-height: 54px;
+    gap: 10px;
+}
+
+.rightButton .link {
+    border: 0.15vw solid #FEFEF9;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    max-height: 54px;
+    max-width: 54px;
+    cursor: pointer;
+}
+
+.rightButton .link.music {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    margin-left: 0.5vw;
+}
+
+.rightButton .link img {
+    max-width: 34px;
+    max-height: 34px;
+    height: 2vh;
+    width: 2vh;
+}
+
+.link.music .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 54px;
+    max-height: 54px;
+    height: 2vh;
+    width: 100%;
+}
+
+.loader-container > div {
+	position: relative;
+	display: inline-block;
+	background: #000000;
+	height: 80%;
+	width: 0.3vw;
+	margin: 0;
+	-webkit-animation: load 2s ease-in-out infinite;
+	animation: load 3s ease-in-out infinite;
+    border-radius: 500px;
+    margin: 0 3%;
+}
+
+.loader-container .rectangle-2 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+
+.loader-container .rectangle-3 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+.loader-container .rectangle-4 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+
+.loader-container .rectangle-5 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+.loader-container .rectangle-6 {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+@-moz-keyframes load {
+	0%,
+	100% {
+		-moz-transform: scaleY(1);
+		background: white;
+	}
+	16.67% {
+		-moz-transform: scaleY(3);
+		background: white;
+	}
+	33.33% {
+		-moz-transform: scaleY(1);
+		background: white;
+	}
+	50% {
+		-moz-transform: scaleY(3);
+		background: white;
+	}
+	66.67% {
+		-moz-transform: scaleY(1);
+		background: white;
+	}
+	83.34% {
+		-moz-transform: scaleY(3);
+		background: white;
+	}
+} 
+
+@-webkit-keyframes load {
+	0%,
+	100% {
+		-webkit-transform: scaleY(1);
+		background: white;
+	}
+	16.67% {
+		-webkit-transform: scaleY(3);
+		background: white;
+	}
+	33.33% {
+		-webkit-transform: scaleY(1);
+		background: white;
+	}
+	50% {
+		-webkit-transform: scaleY(3);
+		background: white;
+	}
+	66.67% {
+		-webkit-transform: scaleY(1);
+		background: white;
+	}
+	83.34% {
+		-webkit-transform: scaleY(3);
+		background: white;
+	}
+} 
+
+@keyframes load {
+	0%,
+	100% {
+		transform: scaleY(1);
+		background: white;
+	}
+	16.67% {
+		transform: scaleY(3);
+		background: white;
+	}
+	33.33% {
+		transform: scaleY(1);
+		background: white;
+	}
+	50% {
+		transform: scaleY(3);
+		background: white;
+	}
+	66.67% {
+		transform: scaleY(1);
+		background: white;
+	}
+	83.34% {
+		transform: scaleY(3);
+		background: white;
+	}
+} 
