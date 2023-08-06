@@ -35,7 +35,7 @@
             </div>
 
             <div class="menuButton" onclick="handleClick()">
-                <img src="./assets/PlusMath.png" alt="">
+                <img src="/portfolio/static/header/assets/PlusMath.png" alt="">
             </div>
         </div>
 
