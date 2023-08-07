@@ -41,13 +41,13 @@
 
         <div class="rightButton">
             <div class="link">
-                <img src="./assets/github.png" alt="">
+                <img src="/portfolio/static/header/assets/github.png" alt="">
             </div>
             <div class="link">
-                <img src="./assets/letter.png" alt="">
+                <img src="/portfolio/static/header/assets/letter.png" alt="">
             </div>
             <div class="link">
-                <img src="./assets/instagram.png" alt="">
+                <img src="/portfolio/static/header/assets/instagram.png" alt="">
             </div>
             <div class="link music" onclick="musicClick()" style="display: none">
                 <div class="loader-container">
