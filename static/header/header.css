@@ -70,25 +70,24 @@ body.fade-in {
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    border: 0.15vw solid #FEFEF9;
+    border: 0.3vh solid #FEFEF9;
     max-width: 336px;
+    height: 5vh;
+    width: 15vw;
     max-height: 54px;
 }
 
 .leftButton .homePageFill {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 50px;
-    border: 2px solid #FEFEF9;
+    border-radius: 100px;
     background: #FFF;
-    max-width: 325px;
-    max-height: 43.61px;
-    padding-left: 0.5vw;
-    padding-right: 0.1vw;
-    margin: 2%;
-    width: 13vw;
-    height: 3.5vh;
+    max-width: 100%;
+    height: 80%;
+    width: 97%;
+    gap: 35%;
+    max-height: 100%;
 }
 
 .homePageFill p {
@@ -106,14 +105,15 @@ body.fade-in {
 
 .AllContentButton {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 28.3vw;
+    justify-content: center;
+    height: 5vh;
+    width: 30vw;
     max-width: 747px;
     max-height: 54px;
-    border: 0.15vw solid #FEFEF9;
+    border: 0.3vh solid #FEFEF9;
     border-radius: 50px;
     background: rgba(39, 39, 39, 0.70);
+    align-items: center;
 }
 
 .leftButton .contentButton {
@@ -122,111 +122,66 @@ body.fade-in {
     justify-content: center;
     align-items: center;
     color: white;
-    width: 100%;
+    max-width: 100%;
+    height: 40%;
+    width: 97%;
+    max-height: 54px;
+    gap: 1%;
 }
 
 .leftButton .contentButtonFill {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 738.314px;
     max-height: 43.61px;
-    margin: 2% 1%;
-    height: 2.85vh;
-    gap: 3px;
+    margin: 1% 1.5%;
+    height: 3.5vh;
+    gap: 0.5%;
     width: 100%;
 }
 
-.contentButton .about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    border: 0.15vw solid #FEFEF9;
+.contentButtonFill > img {
     width: 50%;
-    height: 4vh;
-    max-height: 43.61px;
-    font-size: calc(1px + 0.7vw);
-    font-family: "Kanetin", Arial;
-    overflow: hidden;
+    height: 100%;
     cursor: pointer;
-    padding-left: 0.5vw;
-    opacity: 1;
-    animation: fadeInAnim 0.5s ease;
-}
-
-.about .aboutSub {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    border: 0.15vw solid #E07D63;
-    background: #E07D63;
-    height: 4vh;
-    width: 5vw;
-}
-
-.contentButton .projects {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    border: 0.15vw solid #FEFEF9;
-    max-width: 747px;
-    width: 50%;
-    height: 4vh;
-    max-height: 43.61px;
-    font-size: calc(1px + 0.7vw);
-    font-family: "Kanetin", Arial;
-    overflow: hidden;
-    cursor: pointer;
-    padding-left: 0.5vw;
-    opacity: 1;
-    animation: fadeInAnim 0.5s ease;
-}
-
-.projects .projectsSub {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    border: 0.15vw solid #257CAC;
-    background: #257CAC;
-    height: 4vh;
-    width: 6vw;
 }
 
 .AllContentButton .littleButton {
     color: white;
     display: none;
     width: 100%;
-    height: 4vh;
+    height: 3.5vh;
     max-height: 43.61px;
     justify-content: space-between;
     align-items: center;
     opacity: 1;
     animation: fadeInAnim 0.5s ease;
     cursor: pointer;
+    gap: 1%;
+}
+
+.littleButton > img {
+    width: 25%;
+    height: 100%;
 }
 
 .littleButton p {
     display: flex;
     border-radius: 100px;
-    border: 0.15vw solid #FEFEF9;
+    border: 0.3vh solid #FEFEF9;
     padding: 0.3vw 0.942vw;
     font-size: calc(1px + 0.7vw);
     font-family: "Kanetin", Arial;
     width: 100%;
-    height: 3vh;
+    height: 60%;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
 .menuButton {
-    border: 0.15vw solid #FEFEF9;
+    border: 0.3vh solid #FEFEF9;
     border-radius: 100px;
     display: flex;
     align-items: center;
@@ -278,44 +233,50 @@ body.fade-in {
     color: white;
     display: none;
     width: 100%;
-    height: 4vh;
+    height: 3.5vh;
     max-height: 43.61px;
     justify-content: space-between;
     align-items: center;
     opacity: 0;
     animation: fadeOutAnim 0.5s ease;
+}
+
+.contentButton .projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.3vh solid #FEFEF9;
+    border-radius: 100px;
+    width: 50%;
+    height: 160%;
+    font-size: calc(1px + 0.7vw);
+    font-family: "Kanetin", Arial;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 0.5vw;
+    opacity: 1;
+    animation: fadeInAnim 0.5s ease;
+}
+
+.projects .projectsSub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 0.3vh solid #257CAC;
+    background: #257CAC;
+    height: 4vh;
+    width: 6vw;
 }
 
 .contentButton .projects.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    border: 0.3vh solid #FEFEF9;
     border-radius: 100px;
-    border: 0.15vw solid #FEFEF9;
-    max-width: 747px;
     width: 50%;
-    height: 4vh;
-    max-height: 43.61px;
-    font-size: calc(1px + 0.7vw);
-    font-family: "Kanetin", Arial;
-    overflow: hidden;
-    cursor: pointer;
-    padding-left: 0.5vw;
-    opacity: 0;
-    animation: fadeOutAnim 0.5s ease;
-}
-
-.contentButton .about.active {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    border: 0.15vw solid #FEFEF9;
-    width: 50%;
-    height: 4vh;
-    max-height: 43.61px;
+    height: 160%;
     font-size: calc(1px + 0.7vw);
     font-family: "Kanetin", Arial;
     overflow: hidden;
@@ -324,6 +285,52 @@ body.fade-in {
     opacity: 1;
     animation: fadeOutAnim 0.5s ease;
 }
+
+.contentButton .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.3vh solid #FEFEF9;
+    border-radius: 100px;
+    width: 50%;
+    height: 160%;
+    font-size: calc(1px + 0.7vw);
+    font-family: "Kanetin", Arial;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 0.5vw;
+    opacity: 1;
+    animation: fadeInAnim 0.5s ease;
+}
+
+.about .aboutSub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 0.3vh solid #E07D63;
+    background: #E07D63;
+    height: 4vh;
+    width: 5vw;
+}
+
+.contentButton .about.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.3vh solid #FEFEF9;
+    border-radius: 100px;
+    width: 50%;
+    height: 160%;
+    font-size: calc(1px + 0.7vw);
+    font-family: "Kanetin", Arial;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 0.5vw;
+    opacity: 0;
+    animation: fadeOutAnim 0.5s ease;
+}
+
 
 .rightButton {
     display: flex;
@@ -336,7 +343,7 @@ body.fade-in {
 }
 
 .rightButton .link {
-    border: 0.15vw solid #FEFEF9;
+    border: 0.3vh solid #FEFEF9;
     border-radius: 100px;
     display: flex;
     align-items: center;

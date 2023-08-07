@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Kizilkaya";
+    src: url("../fonts/Kizilkaya.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "against";
+    src: url("../fonts/against.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Kanetin";
+    src: url("../fonts/Kanetin.otf") format("OpenType");
+}
+
+body {
+    background: url("./backStatic.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+p {
+    font-family: "Kizilkaya";
+    text-align: center;
+    color: white;
+}
+
+p.title {
+    text-transform:uppercase;
+    font-size: calc(5px + 8vw);
+}
+
+p.date {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+}
+
+.pcVersion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.15vw solid white;
+    border-radius: 15px;
+    padding: 0 4%;
+    font-size: calc(5px + 3vw);
+}

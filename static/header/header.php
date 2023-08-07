@@ -11,7 +11,7 @@
 
             <div class="AllContentButton">
                 <div class="contentButton">
-                    <div class="contentButtonFill">
+
                         <div class="about mainLink">
                         <p>About</p>
                         <div class="aboutSub">
@@ -30,7 +30,7 @@
                             <p>Archives</p>
                             <p>Contacts</p>
                         </div>
-                    </div>
+
                 </div>
             </div>
 
@@ -41,10 +41,10 @@
 
         <div class="rightButton">
             <div class="link">
-                <img src="/portfolio/static/header/assets/GitHub.png" alt="">
+                <img src="/portfolio/static/header/assets/github.png" alt="">
             </div>
             <div class="link">
-                <img src="/portfolio/static/header/assets/Letter.png" alt="">
+                <img src="/portfolio/static/header/assets/letter.png" alt="">
             </div>
             <div class="link">
                 <img src="/portfolio/static/header/assets/instagram.png" alt="">
