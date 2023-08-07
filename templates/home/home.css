@@ -74,8 +74,11 @@ section {
 
 .leftfooterBanner > div img {
     margin-right: 5px;
+<<<<<<< HEAD
     width: 1vw;
     height: auto;
+=======
+>>>>>>> 46869427db52b362380b9014e4425bb3093af77e
 }
 
 .titleBanner {
@@ -250,7 +253,11 @@ section {
     max-width: 84%;
     max-height: 494px;
     height: 50vh;
+<<<<<<< HEAD
     gap: 4%;
+=======
+    gap: 4vw;
+>>>>>>> 46869427db52b362380b9014e4425bb3093af77e
 }
 
 .recent {
@@ -406,7 +413,12 @@ section {
 
 .link img {
     cursor: pointer;
+<<<<<<< HEAD
     width: 50%;
+=======
+    width: 7vw;
+    height: 8.3vw;
+>>>>>>> 46869427db52b362380b9014e4425bb3093af77e
 }
 
 .linkTop {
