@@ -125,8 +125,8 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
                         </div>
                         <div class="linkBottom">
                             <img src="./assets/twitter.png" alt="">
-                            <img src="./assets/linkedin.png" alt="">
                             <img src="./assets/discord.png" alt="">
+                            <img onclick="contactsClick()" src="./assets/linkedin.png" alt="">
                         </div>
                     </div>
                     <div class="text">

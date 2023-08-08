@@ -29,7 +29,7 @@
                             <p  onclick="aboutClick()">About</p>
                             <p>Projects</p>
                             <p>Archives</p>
-                            <p>Contacts</p>
+                            <p onclick="contactsClick()">Contacts</p>
                         </div>
 
                 </div>
