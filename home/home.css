@@ -407,7 +407,8 @@ section {
 
 .link img {
     cursor: pointer;
-    width: 50%;
+    width: 6vw;
+    max-width: 115px;
 }
 
 .linkTop {

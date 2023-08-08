@@ -84,6 +84,7 @@
     height: 6vh;
     margin:  6% 0 0 0;
     font-size: calc(1px + 0.8vw);
+    cursor: pointer;
 }
 
 .rightheroBanner {
