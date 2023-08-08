@@ -6,6 +6,7 @@
 body {
     transition: opacity 0.5s ease;
     opacity: 1;
+    background: black;
 }
 
 body.fade-out {

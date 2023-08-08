@@ -5,7 +5,12 @@
             <div class="homePageBorder">
                 <div class="homePageFill">
                     <p>Home page</p>
-                    <img src="/portfolio/static/header/assets/buttonHomeRight.png" alt="">
+                    <img src="/portfolio/static/header/assets/buttonHomeRight.png" onclick="homeClick()">
+                    <script>
+                        function homeClick() {
+                            window.location.href = "/portfolio/templates/home/home.php";
+                        }
+                    </script>
                 </div>
             </div>
 

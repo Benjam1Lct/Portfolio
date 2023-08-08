@@ -150,5 +150,6 @@
 
 <script src="/portfolio/static/header/header.js"></script>
 <script src="/portfolio/static/footer/footer.js"></script>
+<script src="./home.js"></script>
 </body>
 </html>
