@@ -5,6 +5,8 @@ const imgDiv = document.querySelector('#item-0 .img');
         document.body.classList.add("fade-out");
 
         setTimeout(function() {
-            window.location.href = "./home/home.php?from=index";
+            window.location.href = "./home/home.php";
           }, 500); // The timeout duration should match the transition duration in CSS (0.5s in this case)
     });
+
+console.log('js index')
