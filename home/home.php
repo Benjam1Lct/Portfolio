@@ -10,9 +10,9 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../header/header.css">
-    <link rel="stylesheet" href="../footer/footer.css">
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="../header/header.css?version=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../footer/footer.css?version=<?php echo time(); ?>">
+    <link rel="stylesheet" href="./home.css?version=<?php echo time(); ?>">
     <title>Home</title>
 </head>
 <body>
@@ -154,8 +154,8 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     </section>
     
 
-<script src="../footer/footer.js"></script>
-<script src="../header/header.js"></script>
-<script src="./home.js"></script>
+<script src="../footer/footer.js?version=<?php echo time(); ?>"></script>
+<script src="../header/header.js?version=<?php echo time(); ?>"></script>
+<script src="./home.js?version=<?php echo time(); ?>"></script>
 </body>
 </html>

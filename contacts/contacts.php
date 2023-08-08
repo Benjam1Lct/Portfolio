@@ -10,9 +10,9 @@ header("Expires: 0"); // Proxies.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../header/header.css">
-    <link rel="stylesheet" href="../footer/footer.css">
-    <link rel="stylesheet" href="./contacts.css">
+    <link rel="stylesheet" href="../header/header.css?version=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../footer/footer.css?version=<?php echo time(); ?>">
+    <link rel="stylesheet" href="./contacts.css?version=<?php echo time(); ?>">
     <title>Contacts</title>
 </head>
 <body>
@@ -30,7 +30,7 @@ header("Expires: 0"); // Proxies.
     </section>
    
 
-<script src="../footer/footer.js"></script>
-<script src="../header/header.js"></script>
+<script src="../footer/footer.js?version=<?php echo time(); ?>"></script>
+<script src="../header/header.js?version=<?php echo time(); ?>"></script>
 </body>
 </html>

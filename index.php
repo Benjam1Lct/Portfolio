@@ -10,7 +10,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./index.css?version=<?php echo time(); ?>">
     <link rel="icon" href="./logo.png" type="image/x-icon">
     <script>
         // Fonction pour vérifier si la largeur de l'écran est celle d'un smartphone
