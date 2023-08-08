@@ -51,3 +51,15 @@ function handleClick() {
     console.log(positionMenu);
   }
 }
+
+function homeClick() {
+  window.location.href = "/portfolio/home/home.php";
+}
+
+function aboutClick() {
+  window.location.href = "/portfolio/about/about.php";
+}
+
+function pageBack() {
+  window.history.back();
+}

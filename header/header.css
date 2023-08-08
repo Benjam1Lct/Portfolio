@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: "Kanetin";
-    src: url("../../fonts/Kanetin.otf") format("OpenType");
+    src: url("../fonts/Kanetin.otf") format("OpenType");
 }
 
 @font-face {
     font-family: "Kizilkaya";
-    src: url("../../fonts/Kizilkaya.ttf") format("TrueType");
+    src: url("../fonts/Kizilkaya.ttf") format("TrueType");
 }
 
 body {
@@ -88,6 +88,28 @@ body.fade-in {
     width: 97%;
     gap: 35%;
     max-height: 100%;
+}
+
+.leftButton .homePageFill.outHome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px;
+    background: #FFF;
+    max-width: 100%;
+    height: 80%;
+    width: 97%;
+    gap: 5%;
+    max-height: 100%;
+}
+
+.leftButton .homePageFill .backButton{
+    display: none;
+}
+
+.leftButton .homePageFill.outHome .backButton{
+    display: flex;
+    transform: rotate(180deg);
 }
 
 .homePageFill p {

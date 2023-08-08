@@ -3,21 +3,17 @@
         <div class="leftButton">
 
             <div class="homePageBorder">
-                <div class="homePageFill">
+                <div id="homePageFill" class="homePageFill">
+                    <img class="backButton" src="/portfolio/header/assets/buttonHomeRight.png" onclick="pageBack()">
                     <p>Home page</p>
-                    <img src="./assets/buttonHomeRight.png" onclick="homeClick()">
-                    <script>
-                        function homeClick() {
-                            window.location.href = "/portfolio/templates/home/home.php";
-                        }
-                    </script>
+                    <img class="homeButton" src="/portfolio/header/assets/buttonHomeRight.png" onclick="homeClick()">
                 </div>
             </div>
 
             <div class="AllContentButton">
                 <div class="contentButton">
 
-                        <div class="about mainLink">
+                        <div class="about mainLink" onclick="aboutClick()">
                         <p>About</p>
                         <div class="aboutSub">
                             <p>Studies</p>
@@ -30,7 +26,7 @@
                             </div>
                         </div>
                         <div class="littleButton">
-                            <p>About</p>
+                            <p  onclick="aboutClick()">About</p>
                             <p>Projects</p>
                             <p>Archives</p>
                             <p>Contacts</p>
@@ -40,19 +36,19 @@
             </div>
 
             <div class="menuButton" onclick="handleClick()">
-                <img src="./assets/PlusMath.png" alt="">
+                <img src="/portfolio/header/assets/PlusMath.png" alt="">
             </div>
         </div>
 
         <div class="rightButton">
             <div class="link">
-                <img src="./assets/githubHeader.png" alt="">
+                <img src="/portfolio/header/assets/githubHeader.png" alt="">
             </div>
             <div class="link">
-                <img src="./assets/instagramHeader.png" alt="">
+                <img src="/portfolio/header/assets/instagramHeader.png" alt="">
             </div>
             <div class="link">
-                <img src="./assets/letterHeader.png" alt="">
+                <img src="/portfolio/header/assets/letterHeader.png" alt="">
             </div>
             <div class="link music" onclick="musicClick()" style="display: none">
                 <div class="loader-container">

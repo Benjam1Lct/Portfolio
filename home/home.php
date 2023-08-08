@@ -144,12 +144,12 @@
             <div class="space"></div>
         </div>
         
-        <?php include '../../static/footer/footer.php'; ?>
+        <?php include '../footer/footer.php'; ?>
     </section>
     
 
-<script src="../header/header.js"></script>
 <script src="../footer/footer.js"></script>
+<script src="../header/header.js"></script>
 <script src="./home.js"></script>
 </body>
 </html>

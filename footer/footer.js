@@ -6,8 +6,12 @@ const contactsFooter = document.querySelector('#contactsFooter');
 
 // Récupérer le nom de la page
 const currentPage = window.location.pathname.split("/").pop().split(".")[0];
-
 console.log(currentPage);
+
+if (currentPage !== "home") {
+  const homePageFill = document.getElementById('homePageFill');
+  homePageFill.classList.add('outHome');
+}
 
 // Vérifier si le nom de la currentPage suivi du mot "Footer" correspond à une des constantes
 const footerConstants = ["home", "about", "projects", "archives", "contacts"];
@@ -18,3 +22,4 @@ for (let i = 0; i < footerConstants.length; i++) {
     break;
   }
 }
+
