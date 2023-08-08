@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Kanetin";
-    src: url("../../fonts/Kanetin.otf") format("OpenType");
+    src: url("../fonts/Kanetin.otf") format("OpenType");
 }
 
 @font-face {
     font-family: "Kizilkaya";
-    src: url("../../fonts/Kizilkaya.ttf") format("TrueType");
+    src: url("../fonts/Kizilkaya.ttf") format("TrueType");
 }
 
 .containerFooter {
