@@ -16,7 +16,7 @@
             <div class="heroBanner">
                 <div class="titleBanner">
                     <div class="text">
-                        <p>Hy<span>,</span> I am</p>
+                        <p>Hi<span>,</span> I am</p>
                         <P class="mainText">Benjamin <br> Lecomte</P>
                         <p>Creative Coder</p>
                         <p>Student</p>

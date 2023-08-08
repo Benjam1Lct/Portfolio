@@ -17,13 +17,73 @@ header("Expires: 0"); // Proxies.
 </head>
 <body>
     <section>
-        <div class="firtSection">
-            <?php include '../header/header.php'; ?>    
+        <div class="firstSection">
+            <?php include '../header/header.php'; ?>
+            <div class="heroBanner">
+                <div class="limitheroBanner">
+                    <div class="leftheroBanner">
+                        <p>Hi<span>,</span> I am</p>
+                        <P class="mainText">Benjamin <br> Lecomte</P>
+                        <p>A french student in the first <br> year of computer studies</p>
+                        <div class="buttonheroBanner">
+                            Contact Me
+                        </div>
+                    </div>
+                    <div class="rightheroBanner">
+                        <img src="./assets/heroBanner.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        
 
-
+        <div class="timeline">
+            <div class="date1">
+                <div class="flex">
+                    <div class="circle1">
+                        <div class="lineVerti1"></div>
+                        <div class="centerCircle1"></div>
+                    </div>
+                    <div class="line1"></div>  
+                </div>
+                
+                <div class="box1"></div> 
+            </div>
+            <div class="dateOther">
+                <div class="flex">
+                    <div class="circleOther">
+                        <div class="lineVertiOther"></div>
+                        <div class="centerCircleOther"></div>
+                    </div>
+                    <div class="lineOther"></div>  
+                </div>
+                
+                <div class="boxOther"></div> 
+            </div>
+            <div class="dateOther">
+                <div class="flex">
+                    <div class="circleOther">
+                        <div class="lineVertiOther"></div>
+                        <div class="centerCircleOther"></div>
+                    </div>
+                    <div class="lineOther"></div>  
+                </div>
+                
+                <div class="boxOther"></div> 
+            </div>
+            <div class="dateOther">
+                <div class="flex">
+                    <div class="circleOther">
+                        <div class="lineVertiOther"></div>
+                        <div class="centerCircleOther"></div>
+                    </div>
+                    <div class="lineOther"></div>  
+                </div>
+                
+                <div class="boxOther"></div> 
+            </div>
+            
+        </div>
+       
         <?php include '../footer/footer.php'; ?>   
     </section>
    

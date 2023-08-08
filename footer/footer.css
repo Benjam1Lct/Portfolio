@@ -10,6 +10,8 @@
 
 .containerFooter {
     width: 100%;
+    border-top: 0.1vw solid white;
+    
 }
 
 .footer {
