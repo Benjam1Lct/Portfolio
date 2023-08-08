@@ -25,7 +25,7 @@
     
     <div class="angry-grid">
         <div id="item-0"> 
-            <div class="img"></div>
+            <div class="img" onclick="startHome()"></div>
         </div>
         <div id="item-1"></div>
         <div id="item-2">&nbsp;</div>
