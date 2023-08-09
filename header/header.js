@@ -1,3 +1,4 @@
+
 // Check for the "from" query parameter in the URL
 const urlParams = new URLSearchParams(window.location.search);
 const fromIndex = urlParams.get('from');
@@ -9,15 +10,6 @@ const litleNav = document.querySelector('.AllContentButton .littleButton');
 const musicWavesBox = document.querySelector('.link.music');
 const musicWavesIcon = document.querySelector('.loader-container');
 var stateMusic = 0;
-
-// If the "from" parameter is present and its value is "index", add the "fade-in" class to the body
-if (fromIndex === 'index') {
-  document.body.classList.add('fade-in');
-  // Remove the "fade-in" class once the animation is finished
-  setTimeout(function() {
-    document.body.classList.remove('fade-in');
-  }, 500); // The timeout duration should match the animation duration in CSS (0.5s in this case)
-};
 
 function handleClick() {
   console.log("Click");
@@ -52,18 +44,22 @@ function handleClick() {
   }
 }
 
-function homeClick() {
-  window.location.href = "/portfolio/home/home.php";
-}
-
-function aboutClick() {
-  window.location.href = "/portfolio/about/about.php";
-}
-
-function contactsClick() {
-  window.location.href = "/portfolio/contacts/contacts.php";
-}
-
 function pageBack() {
   window.history.back();
+}
+
+document.body.classList.add('fade-in');
+
+function changePage(page) {
+
+  document.body.classList.remove('fade-in');
+  document.body.classList.add('fade-out');
+
+  setTimeout(() => {
+    // Naviguer vers la nouvelle page
+    window.location.href = `/portfolio/${page}/${page}.php`;
+  }, 99);
+
+  // Empêcher le comportement par défaut du lien (si vous utilisez des balises <a>)
+  return false;
 }

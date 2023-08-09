@@ -6,14 +6,14 @@
                 <div id="homePageFill" class="homePageFill">
                     <img class="backButton" src="/portfolio/header/assets/buttonHomeRight.png" onclick="pageBack()">
                     <p>Home page</p>
-                    <img class="homeButton" src="/portfolio/header/assets/buttonHomeRight.png" onclick="homeClick()">
+                    <img class="homeButton" src="/portfolio/header/assets/buttonHomeRight.png" onclick="changePage('home')">
                 </div>
             </div>
 
             <div class="AllContentButton">
                 <div class="contentButton">
 
-                        <div class="about mainLink" onclick="aboutClick()">
+                        <div class="about mainLink" onclick="changePage('about')">
                         <p>About</p>
                         <div class="aboutSub">
                             <p>Studies</p>
@@ -26,10 +26,10 @@
                             </div>
                         </div>
                         <div class="littleButton">
-                            <p  onclick="aboutClick()">About</p>
+                            <p  onclick="changePage('about')">About</p>
                             <p>Projects</p>
-                            <p>Archives</p>
-                            <p onclick="contactsClick()">Contacts</p>
+                            <p onclick="changePage('archives')">Archives</p>
+                            <p onclick="changePage('contacts')">Contacts</p>
                         </div>
 
                 </div>

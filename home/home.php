@@ -10,13 +10,14 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../logo.png" type="image/x-icon">
+
     <link rel="stylesheet" href="../header/header.css?version=<?php echo time(); ?>">
     <link rel="stylesheet" href="../footer/footer.css?version=<?php echo time(); ?>">
     <link rel="stylesheet" href="./home.css?version=<?php echo time(); ?>">
     <title>Home</title>
 </head>
 <body>
-    <section>
+    <section id="swup" class="transition-fade"> 
         <div class="gradient">
             <?php include '../header/header.php'; ?>
             <div class="heroBanner">
@@ -126,7 +127,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
                         <div class="linkBottom">
                             <img src="./assets/twitter.png" alt="">
                             <img src="./assets/discord.png" alt="">
-                            <img onclick="contactsClick()" src="./assets/linkedin.png" alt="">
+                            <img onclick="changePage('contacts')" src="./assets/linkedin.png" alt="">
                         </div>
                     </div>
                     <div class="text">
@@ -142,7 +143,7 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
                 <div class="archives">
                     <div class="archiveContent">
                         <p>Archives</p>
-                        <img src="./assets/buttonArchives.png" alt="">  
+                        <img src="./assets/buttonArchives.png" alt="" onclick="changePage('archives')">  
                     </div>
                 </div>
             </div>
@@ -153,7 +154,6 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
         <?php include '../footer/footer.php'; ?>
     </section>
     
-
 <script src="../footer/footer.js?version=<?php echo time(); ?>"></script>
 <script src="../header/header.js?version=<?php echo time(); ?>"></script>
 <script src="./home.js?version=<?php echo time(); ?>"></script>

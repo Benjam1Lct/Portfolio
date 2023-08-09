@@ -10,6 +10,9 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./header/header.css?version=<?php echo time(); ?>">
+    <link rel="stylesheet" href="./footer/footer.css?version=<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" href="./index.css?version=<?php echo time(); ?>">
     <link rel="icon" href="./logo.png" type="image/x-icon">
     <script>
@@ -31,14 +34,15 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     
     <div class="angry-grid">
         <div id="item-0"> 
-            <div class="img" onclick="startHome()"></div>
+            <div class="img" onclick="changePage('home')"></div>
         </div>
         <div id="item-1"></div>
         <div id="item-2">&nbsp;</div>
         <div id="item-3">&nbsp;</div>
     </div>
 
-
+<script src="./footer/footer.js?version=<?php echo time(); ?>"></script>
+<script src="./header/header.js?version=<?php echo time(); ?>"></script>
 <script src="./index.js"></script>
 </body>
     
