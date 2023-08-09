@@ -55,7 +55,7 @@ html {
 
 body {
     opacity: 0;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
     background: black;
     font-family: "Kanetin", Arial;
 }
@@ -70,7 +70,7 @@ body.charged {
 
 body.fade-out {
     opacity: 0;
-    transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.12s ease-in-out;
 }
 
 

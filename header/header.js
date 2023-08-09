@@ -58,7 +58,7 @@ function changePage(page) {
   setTimeout(() => {
     // Naviguer vers la nouvelle page
     window.location.href = `/portfolio/${page}/${page}.php`;
-  }, 99);
+  }, 10);
 
   // Empêcher le comportement par défaut du lien (si vous utilisez des balises <a>)
   return false;
