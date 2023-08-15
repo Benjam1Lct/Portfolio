@@ -45,7 +45,14 @@ function handleClick() {
 }
 
 function pageBack() {
-  window.history.back();
+
+  document.body.classList.remove('fade-in');
+  document.body.classList.add('fade-out');
+
+  setTimeout(() => {
+    // Naviguer vers la nouvelle page
+    window.history.back();
+  }, 10); 
 }
 
 document.body.classList.add('fade-in');
@@ -55,10 +62,17 @@ function changePage(page) {
   document.body.classList.remove('fade-in');
   document.body.classList.add('fade-out');
 
-  setTimeout(() => {
-    // Naviguer vers la nouvelle page
-    window.location.href = `/portfolio/${page}/${page}.php`;
-  }, 10);
+  if (page === '2nd' || page === '1ere' || page === 'Term') {
+    setTimeout(() => {
+      // Naviguer vers la nouvelle page
+      window.location.href = `/portfolio/archives/${page}/${page}.php`;
+    }, 10);
+  } else {
+    setTimeout(() => {
+      // Naviguer vers la nouvelle page
+      window.location.href = `/portfolio/${page}/${page}.php`;
+    }, 10);
+  }
 
   // Empêcher le comportement par défaut du lien (si vous utilisez des balises <a>)
   return false;

@@ -31,15 +31,15 @@ header("Expires: 0"); // Proxies.
         <div class="firstSection">
             <?php include '../header/header.php'; ?>
             <div class="heroBanner">
-                <div class="leftheroBanner" onclick="left()">
+                <div class="leftheroBanner" onclick="changePage('2nd')">
                     <p>2<span>nd</span></p>
                     <p class="classe">classe</p>
                 </div>
-                <div class="middleheroBanner" onclick="middle()">
+                <div class="middleheroBanner" onclick="changePage('1ere')">
                     <p>1<span>ere</span></p>
                     <p class="classe">classe</p>
                 </div>
-                <div class="rightheroBanner" onclick="right()">
+                <div class="rightheroBanner" onclick="changePage('Term')">
                     <p>T<span>erm</span></p>
                     <p class="classe">classe</p>
                 </div>
