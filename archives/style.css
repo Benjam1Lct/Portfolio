@@ -28,6 +28,7 @@
     min-height: 86vh;
     height: 100%;
     overflow: hidden;
+    outline: none;
 }
 
 .content {
@@ -46,23 +47,23 @@
     transition: all 0.2s ease;
     transform: translateX(0px);
     position: relative;
+    outline: none;
 }
 
 .content img {
     padding: 0 2%;
+    outline: none;
 }
 
 .contentTransform p {
     width: 100%;
     white-space: nowrap;
+    outline: none;
 } 
 
 .content:hover {
     background: white;
-}
-
-.content:hover .contentTransform {
-    color: black;
+    outline: none;
 }
 
 .contentTransform {
@@ -70,9 +71,20 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    outline: none;
+    transform: translateX(0);
+    transition: transform 1.8s ease;
+    z-index: 1;
+}
+
+.content:hover .contentTransform {
+    color: black;
+    outline: none;
+    transform: translateX(-30vw);
 }
 
 .download {
+    outline: none;
     position: absolute;
     right: 0;
     background: black;
@@ -91,15 +103,20 @@
     transition: transform 0.5s ease; /* Ajout de la transition */
     gap: 1vw;
     cursor: pointer;
+    outline: none;
+    z-index: 10;
 }
 
 /* Utilisation du sélecteur parent .download pour le :hover */
 .content:hover .download {
     transform: translateX(0vw);
+    outline: none;
 }
 
 
 .download img {
     max-width: 77px;
     width: 5vw;
+    outline: none;
 }
+
