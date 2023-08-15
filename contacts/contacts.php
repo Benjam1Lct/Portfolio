@@ -13,6 +13,17 @@ header("Expires: 0"); // Proxies.
     <link rel="stylesheet" href="../header/header.css?version=<?php echo time(); ?>">
     <link rel="stylesheet" href="../footer/footer.css?version=<?php echo time(); ?>">
     <link rel="stylesheet" href="./contacts.css?version=<?php echo time(); ?>">
+    <script>
+        // Fonction pour vérifier si la largeur de l'écran est celle d'un smartphone
+        function isMobile() {
+            return window.innerWidth <= 768; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+        }
+
+        // Vérifier si l'écran est un smartphone et effectuer la redirection
+        if (isMobile()) {
+            window.location.href = "./mobile/mobile.php";
+        }
+    </script>
     <title>Contacts</title>
 </head>
 <body>
