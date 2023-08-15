@@ -14,8 +14,8 @@ if (currentPage !== "home") {
 }
 
 // Vérifier si le nom de la currentPage suivi du mot "Footer" correspond à une des constantes
-const footerConstants = ["home", "about", "projects", "archives", "contacts"];
-const footerMenuItems = [homeFooter, aboutFooter, projectsFooter, archivesFooter, contactsFooter];
+const footerConstants = ["home", "about", "projects", "archives", "2nd", "1ere", "Term", "contacts"];
+const footerMenuItems = [homeFooter, aboutFooter, projectsFooter, archivesFooter, archivesFooter, archivesFooter, archivesFooter, contactsFooter];
 for (let i = 0; i < footerConstants.length; i++) {
   if (currentPage === footerConstants[i]) {
     footerMenuItems[i].classList.add("active");
