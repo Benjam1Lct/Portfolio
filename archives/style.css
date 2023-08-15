@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Kizilkaya";
+    src: url("../fonts/Kizilkaya.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "against";
+    src: url("../fonts/against.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Kanetin";
+    src: url("../fonts/Kanetin.otf") format("OpenType");
+}
+
+.containerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: 170px;
+    height: 14vh;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.contentSection {
+    min-height: 86vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    border-top: 0.05vw solid white;
+    border-bottom: 0.1rem solid white;
+    min-height: 16vh;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    font-family: "Kanetin";
+    font-size: calc(5px + 1.5vw);
+    transition: all 0.2s ease;
+    transform: translateX(0px);
+    position: relative;
+}
+
+.content img {
+    padding: 0 2%;
+}
+
+.contentTransform p {
+    width: 100%;
+    white-space: nowrap;
+} 
+
+.content:hover {
+    background: white;
+}
+
+.content:hover .contentTransform {
+    color: black;
+}
+
+.contentTransform {
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.download {
+    position: absolute;
+    right: 0;
+    background: black;
+    max-width: 371px;
+    width: 20vw;
+    height: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 1.5vw);
+    box-shadow: -30px 0px 50px 25px rgba(0, 0, 0, 0.30);
+    transform: translateX(100vw);
+    transition: transform 0.5s ease; /* Ajout de la transition */
+    gap: 1vw;
+    cursor: pointer;
+}
+
+/* Utilisation du sélecteur parent .download pour le :hover */
+.content:hover .download {
+    transform: translateX(0vw);
+}
+
+
+.download img {
+    max-width: 77px;
+    width: 5vw;
+}
