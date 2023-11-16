@@ -4,7 +4,7 @@
 
             <div class="homePageBorder">
                 <div id="homePageFill" class="homePageFill">
-                    <img class="backButton" src="/portfolio/header/assets/buttonHomeRight.png" onclick="pageBack()">
+                    <img class="backButton" src="/portfolio/header/assets/buttonHomeLeft.png" onclick="pageBack()">
                     <p>Home page</p>
                     <img class="homeButton" src="/portfolio/header/assets/buttonHomeRight.png" onclick="changePage('home')">
                 </div>

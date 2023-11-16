@@ -15,17 +15,6 @@ header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
     <link rel="stylesheet" href="./footer/footer.css?version=<?php echo time(); ?>">
     <link rel="stylesheet" type="text/css" href="./index.css?version=<?php echo time(); ?>">
     <link rel="icon" href="./logo.png" type="image/x-icon">
-    <script>
-        // Fonction pour vérifier si la largeur de l'écran est celle d'un smartphone
-        function isMobile() {
-            return window.innerWidth <= 768; // Vous pouvez ajuster cette valeur en fonction de vos besoins
-        }
-
-        // Vérifier si l'écran est un smartphone et effectuer la redirection
-        if (isMobile()) {
-            window.location.href = "./mobile/mobile.php";
-        }
-    </script>
     <title>Preload</title>
 </head>
 

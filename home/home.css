@@ -474,3 +474,77 @@ section {
     margin-left: 6%;
     cursor: pointer;
 }
+
+@media (max-width: 480px) {
+    .gradient {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: none;
+        height: 100vh;
+        border-bottom: 0.1vw solid white;
+        box-sizing: border-box;
+    }
+    .titleBanner {
+        height: 100%;
+        width: 100%;
+        max-width: 84%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 195px;
+        padding-top: 49px;
+    }
+    .card {
+        margin-right: 3vw;
+        width: 100%;
+    }
+    .cardCalque {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        transform: scale(3);
+    }
+    .text {
+        color: #4F4F4F;
+        font-family: "Kanetin";
+        font-size: calc(1px + 6vw);
+        background: url("./assets/backStatic.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 300px;
+    }
+    .mainText {
+        color: white;
+        font-family: "against";
+        font-size: calc(5px + 12vw);
+    }
+    .footerBanner {
+        display: none;
+    }
+    .listCatLeft > p {
+        border: 0.15vw solid #4F4F4F;
+        border-radius: 100px;
+        padding: 0.2vw 0.4vw;
+        font-size: calc(1px + 1.7vw);
+    }
+    .listCatRight .ligne {
+        background: #4F4F4F;
+        color: #4F4F4F;
+        border: 0.1vh solid #4F4F4F;
+        border-radius: 100px;
+        height: 0.1vh;
+        max-width: 30px;
+        width: 100vw;
+        margin: 0px 4% 0.7vh 4%;
+    }
+    .listCatRight {
+        font-family: "Kizilkaya";
+        font-size: calc(8px + 1.7vw);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 0.5vh;
+    }
+}

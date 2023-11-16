@@ -557,4 +557,10 @@ body.fade-out {
 		transform: scaleY(3);
 		background: white;
 	}
-} 
+}
+
+@media (max-width: 480px) {
+    .containerHeader .header {
+        display: none;
+    }
+}
