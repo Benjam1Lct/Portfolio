@@ -491,10 +491,9 @@ section {
         max-width: 84%;
         display: flex;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
         flex-direction: column;
-        gap: 195px;
-        padding-top: 49px;
+        gap: 165px;
     }
     .card {
         margin-right: 3vw;
@@ -504,7 +503,6 @@ section {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        transform: scale(3);
     }
     .text {
         color: #4F4F4F;
@@ -526,7 +524,7 @@ section {
     .listCatLeft > p {
         border: 0.15vw solid #4F4F4F;
         border-radius: 100px;
-        padding: 0.2vw 0.4vw;
+        padding: 0.2vw 1vw;
         font-size: calc(1px + 1.7vw);
     }
     .listCatRight .ligne {
@@ -546,5 +544,205 @@ section {
         align-items: center;
         justify-content: flex-end;
         margin-top: 0.5vh;
+    }
+    .cardButton {
+        position: absolute;
+        margin-bottom: 2vw;
+        margin-right: 0.7vw;
+        width: 64vw;
+        cursor: pointer;
+    }
+    .cardContent {
+        display: none;
+    }
+    .projectsBannerContentText p {
+        min-width: 45vw;
+        text-align: left;
+        color: white;
+        font-size: calc(8px + 4.8vw);
+        padding-top: calc(2vh + 20px);
+        padding-left: 35px;
+    }
+    .projectsBannerContent .button {
+        position: absolute;
+        bottom: 5vw;
+        left: 8vw;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .projectsBannerContentText img {
+        border-radius: 20px;
+        transform: translateX(-75px);
+    }
+    .projectsBannerContentText {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .dualTuiles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 84%;
+        height: 100%;
+        gap: 25px;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .recent {
+        background: url(./assets/recentBackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+    .recent .bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 4% 8% 4% 8%;
+        font-size: calc(3px + 2vw);
+    }
+    .recent .bottom .date {
+        display: flex;
+        flex: row;
+        justify-content: space-between;
+        border-bottom: 0.15vw solid black;
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+        font-size: calc(4px + 1vw);
+    }
+    .recent .bottom .date .dateText {
+        font-family: 'Kizilkaya';
+        font-size: calc(4px + 1vw);
+        transform: translateY(10%);
+    }
+    .recent .top p {
+        border: 0.15vw solid black;
+        border-radius: 100px;
+        padding: 0.2vw 1.5vw;
+        font-size: calc(1px + 2vw);
+    }
+    .recent .top .button {
+        max-width: 58px;
+        max-height: 58px;
+        width: 6.4vw;
+        height: 6.4vw;
+        cursor: pointer;
+    }
+    .skils .title {
+        width: 85%;
+        text-align: left;
+        font-size: calc(5px + 4vw);
+    }
+    .settingsText p {
+        font-size: 10px;
+    }
+    .skils {
+        border-radius: 20px;
+        border: 0.15vw solid white;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 6vh;
+        padding: 30px 0px;
+    }
+    .contactSize .text {
+        background: none;
+    }
+    .contactSize {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        height: 100%;
+        width: 85%;
+        flex-direction: column-reverse;
+    }
+    .contact .text {
+        max-width: 85%;
+        color: white;
+        font-family: 'Kizilkaya';
+        text-align: center;
+    }
+    .contact .text .subtitle {
+        font-size: calc(6px + 1.5vw);
+    }
+    .link img {
+        cursor: pointer;
+        width: 13vw;
+        max-width: 115px;
+    }
+    .link {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .contact .text .title {
+        font-size: calc(10px + 5vw);
+    }
+    .tuiles {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        border-bottom: 0.1vw solid white;
+    }
+    .dualTuiles {
+        all: unset;
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 84%;
+    }
+    .dualTuilesFlex {
+        all: unset;
+        display: flex;
+        justify-content: center;
+    }
+    .archiveContent {
+        display: flex;
+        color: white;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 30px 35px;
+        font-family: 'Kizilkaya';
+        font-size: calc(17px + 7.5vw);
+    }
+    .archiveContent img {
+        width: 10vw;
+        height: 10vw;
+        margin-left: 6%;
+        cursor: pointer;
+    }
+    .archives {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 84%;
+        max-height: 494px;
+        height: 50vh;
+        border-radius: 20px;
+        border: 0.15vw solid white;
+        background: url(./assets/archivesBackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }

@@ -50,3 +50,15 @@
     align-items: center;
     gap: 1vw;
 }
+
+@media (max-width: 480px) {
+    .footerright {
+        display: none;
+    }
+
+    .footerleft {
+        font-size: calc(4px + 1vw);
+    }
+    
+    
+}
