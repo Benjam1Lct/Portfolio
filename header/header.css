@@ -49,6 +49,11 @@
     src: url("../fonts/Kizilkaya.ttf") format("TrueType");
 }
 
+@font-face {
+    font-family: "Eloquia";
+    src: url("../fonts/Eloquia-ExtraLight.otf") format("OpenType");
+}
+
 html {
     background: black;
 }

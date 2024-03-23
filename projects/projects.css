@@ -1,0 +1,238 @@
+.containerHeader {
+    background: transparent;
+    position: absolute;
+    top: 0;
+}
+
+.background_blue {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.content-heroBanner {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heroBanner-Projects {
+    width: 80%;
+    max-width: 1080px;
+    height: 500px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-family: "Eloquia";
+    color: white;
+    margin-bottom: 40px;
+}
+
+.left-heroBanner {
+    width: 50%;
+    height: -webkit-fill-available;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.left-heroBanner-img {
+    width: 100%;
+    height: 55%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: grey;
+}
+
+.left-heroBanner-date {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.left-heroBanner-title {
+    font-family: "Kanetin";
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.left-heroBanner-description {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.left-heroBanner-button {
+    background: #257CAC;
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.right-heroBanner {
+    width: 50%;
+    height: -webkit-fill-available;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top-heroBanner {
+    height: 50%;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.right-bottom-heroBanner {
+    height: 50%;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left-hero {
+    width: 50%;
+    height: fit-content;
+}
+
+.right-hero {
+    width: 50%;
+    height: 100%;
+}
+
+.right-heroBanner-img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: grey;
+}
+
+.right-heroBanner-date {
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.right-heroBanner-title {
+    font-family: "Kanetin";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.right-heroBanner-description {
+    font-size: 14px;
+    font-weight: 100;
+    height: 50px;
+    overflow: hidden;
+}
+
+.right-heroBanner-button {
+    background: #257CAC;
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.list-of-content {
+    width: 80%;
+    max-width: 1080px;
+    color: white;
+}
+
+.list-of-content-title {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-of-content-title p {
+    font-size: 20px;
+    width: 175px;
+}
+
+.list-of-content-title-button img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.list-of-content-title-ligne {
+    height: 1px;
+    width: -webkit-fill-available;
+    background: white;
+    margin: 0 30px;
+}
+
+.circled {
+    display: none;
+}
+
+.tiles {
+    font-family: "Eloquia";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 150px;
+    transition: all 0.5s ease;
+
+}
+
+.tiles.active {
+    font-family: "Eloquia";
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 150px;
+    transition: all 0.5s ease;
+
+}
+
+
+.tiles .tiles-content {
+    width: 200px;
+    height: 300px;
+    background: red;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.tiles.active .tiles-content {
+    width: 100%;
+    height: 150px;
+    background: red;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}

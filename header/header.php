@@ -19,7 +19,7 @@
                             <p>Studies</p>
                         </div>
                         </div>
-                        <div class="projects mainLink">
+                        <div class="projects mainLink" onclick="changePage('projects')">
                             <p>Projects</p>
                             <div class="projectsSub">
                                 <p>Collection</p>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="littleButton">
                             <p  onclick="changePage('about')">About</p>
-                            <p>Projects</p>
+                            <p onclick="changePage('projects')">Projects</p>
                             <p onclick="changePage('archives')">Archives</p>
                             <p onclick="changePage('contacts')">Contacts</p>
                         </div>
